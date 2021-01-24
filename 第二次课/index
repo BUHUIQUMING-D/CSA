@@ -69,9 +69,52 @@ arr.length //4，获取数组的长度
 //判断数组使用isArray函数
 var arr = [1,'1',true,[0,1,2,3]]
 Array.isArray(arr)
+
 //数组的遍历
 //for循环
 for(var i = 0;i<=arr.length;i++)
 {
-  console.log()
+  console.log(arr[i])
 }
+
+//forof遍历
+for(var item of arr)
+{
+  console.log(arr[item])
+}
+
+//forEach遍历
+function fun(item,index){
+    console.log(item)
+}
+
+arr.forEach(fun)
+
+
+//函数声明语法
+function test(){
+    
+}
+
+//函数表达式的形式
+var test = function(){
+    
+}
+
+//函数返回值
+function test(){
+    return 1;
+}
+
+
+//数据类型的判断
+var x = 1
+var isTrue = false
+var str = '今天也是****的一天呢'
+var un
+
+typeof x
+typeof isTrue
+typeof str
+typeof un
+
